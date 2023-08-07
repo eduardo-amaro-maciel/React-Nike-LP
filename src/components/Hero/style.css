@@ -1,0 +1,45 @@
+.thumb {
+   height: 100vh;
+   width: 100%;
+   display: flex;
+   padding: 0;
+   margin: 0;
+   overflow-x: hidden;
+   overflow-y: hidden;
+   align-items: center;
+   justify-content: center;
+}
+.thumb img {
+   width: 750px;
+   animation: sneakerAnimation 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+.thumb .parallax-text {
+   position: absolute;
+   font-family: "Montserrat";
+   font-size: 350px;
+   font-style: italic;
+   margin: 0;
+   padding: 0;
+   color: #17171b;
+}
+.thumb .parallax-text::after {
+   content: attr(data-text);
+   margin: 0;
+   padding: 0;
+   position: absolute;
+   z-index: 100;
+   top: 0;
+   left: 0;
+   color: transparent;
+   -webkit-text-stroke: 0.15vw #17171b;
+}
+@keyframes sneakerAnimation {
+   0%,
+   10% {
+      transform: translate(100vw, 0) rotate(15deg);
+   }
+   90%,
+   100% {
+      transform: translate(-5vw, -5vw) rotate(-30deg);
+   }
+}

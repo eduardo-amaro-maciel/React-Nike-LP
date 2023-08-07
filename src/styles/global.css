@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+   font-family: Montserrat;
+   src: url("../assets/fonts/Montserrat-Black.ttf"), url("../assets/fonts/Montserrat-Medium.ttf"),
+      url("../assets/fonts/Montserrat-Regular.ttf");
+}
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: Montserrat "Poppins";
+}
+
+:root {
+   --color-primary: #d2f254;
+   --color-secondery: #17171b;
+   --color-white: #f7f7f7;
+}
+
+body {
+   background-color: var(--color-white);
+}
+
+.sticky {
+   position: sticky;
+   transition: 0.8s;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   background-color: var(--color-white);
+}
+
+.hover-nav-top {
+   @apply hover:text-[var(--color-primary)] cursor-pointer;
+}
