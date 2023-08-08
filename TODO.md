@@ -1,6 +1,6 @@
 # Ajustes e implemntações para serem feita
 
-## O site em site esta tudo ok, mas correções e implementações futuras devem ser feitas
+## O site esta tudo ok, mas correções e implementações futuras devem ser feitas
 
 -  [ ] Responsividade do site.
    -  [ ] Deve ser feito um menu hamburguer para o nav/header.
