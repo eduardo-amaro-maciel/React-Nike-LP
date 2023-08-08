@@ -6,8 +6,7 @@ import "swiper/css/scrollbar";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import CarouselShoes from "./components/CarouselShoes";
-import ShowcaseTilt from "./components/ShowcaseTilt";
-import VideoShow from "./components/VideoShow";
+import ShowcaseGrid from "./components/ShowcaseGrid";
 
 register();
 
@@ -17,8 +16,7 @@ export default function App() {
          <Header />
          <Hero />
          <CarouselShoes />
-         <ShowcaseTilt />
-         <VideoShow />
+         <ShowcaseGrid />
       </>
    );
 }

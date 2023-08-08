@@ -55,11 +55,34 @@ body {
    filter: drop-shadow(6px 5px 20px #666666);
 }
 
-.tops-section {
+.grid-section {
+   display: grid;
+   grid-template-columns: 1fr 500px;
+   grid-template-rows: repeat(2, 1fr);
+   grid-column-gap: 20px;
+   grid-row-gap: 20px;
+}
+
+.div1 {
+   grid-area: 1 / 1 / 2 / 2;
+   max-width: 1000px;
+   width: 100%;
+}
+.div2 {
+   grid-area: 2 / 1 / 3 / 2;
+   max-width: 1000px;
+   width: 100%;
+}
+.div3 {
+   grid-area: 1 / 2 / 3 / 3;
+   overflow: hidden;
+}
+
+.card-showcase {
+   background-image: url("../assets/images/tenis-showcase.jpg");
    background-repeat: no-repeat;
-   background-position: center;
+   background-position: right;
    background-size: cover;
-   background-image: url("https://nikevideo.nike.com/media/v1/pmp4/static/clear/72451143001/6767b74f-3c5e-429c-be01-791e0a86054d/c6056678-cce6-473f-acb5-a3dee18f6ea2/main.mp4");
 }
 
 .hover-nav-top {
