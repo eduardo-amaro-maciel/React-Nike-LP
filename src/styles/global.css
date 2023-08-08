@@ -48,8 +48,11 @@ body {
 .tilt-card-section-degrade {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
-   grid-template-rows: min-content minmax(100px, 100%);
    background-image: linear-gradient(to right, #35e4ee, #27edd5, #5df4af, #97f582, #d2f254);
+}
+
+.shoe-filter {
+   filter: drop-shadow(6px 5px 20px #666666);
 }
 
 .hover-nav-top {
