@@ -3,88 +3,13 @@ import CardShoe from "../CardShoe";
 import { Navigation } from "swiper/modules";
 import "./styles.css";
 
-const shoes = [
-   {
-      title: "New Shoe",
-      price: 499,
-      image: "tenis-1.webp",
-      describe: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-   },
-   {
-      title: "New Shoe",
-      price: 499,
-      image: "tenis-3.webp",
-      describe: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-   },
-   {
-      title: "New Shoe",
-      price: 499,
-      image: "tenis-4.webp",
-      describe: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-   },
-   {
-      title: "New Shoe",
-      price: 499,
-      image: "tenis-5.png",
-      describe: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-   },
-   {
-      title: "New Shoe",
-      price: 499,
-      image: "tenis-6.webp",
-      describe: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-   },
-   {
-      title: "New Shoe",
-      price: 499,
-      image: "tenis-7.png",
-      describe: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-   },
-   {
-      title: "New Shoe",
-      price: 499,
-      image: "tenis-8.png",
-      describe: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-   },
-   {
-      title: "New Shoe",
-      price: 499,
-      image: "tenis-9.png",
-      describe: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-   },
-   {
-      title: "New Shoe",
-      price: 499,
-      image: "tenis-10.png",
-      describe: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-   },
-   {
-      title: "New Shoe",
-      price: 499,
-      image: "tenis-11.png",
-      describe: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-   },
-   {
-      title: "New Shoe",
-      price: 499,
-      image: "tenis-14.png",
-      describe: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-   },
-   {
-      title: "New Shoe",
-      price: 499,
-      image: "tenis-15.png",
-      describe: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-   },
-];
-
 export default function CarouselShoes() {
    return (
       <section className="w-full">
-         <div className="m-auto max-w-[1400px]">
+         <div className="m-auto max-w-[1400px] px-5">
             <h1 className="text-5xl text-[var(--color-secondery)] mb-8">You Might Like</h1>
             {[1, 2, 3].map((e, i) => (
-               <div className="mb-20">
+               <div className="mb-20" key={i}>
                   <Slides key={i} delay={e} />
                </div>
             ))}
@@ -94,6 +19,9 @@ export default function CarouselShoes() {
 }
 
 function Slides({ delay }: { delay: number }) {
+   // gera um array fake de 1 a 12 para pegar as imagens dos tenis em images
+   const fakeShoesArr = Array.from({ length: 12 }, (_, index) => index + 1);
+
    return (
       <Swiper
          spaceBetween={50}
@@ -106,9 +34,9 @@ function Slides({ delay }: { delay: number }) {
          navigation
          modules={[Navigation]}
       >
-         {shoes.map((e, i) => (
+         {fakeShoesArr.map((e, i) => (
             <SwiperSlide key={i}>
-               <CardShoe {...e}>a</CardShoe>
+               <CardShoe index={e} />
             </SwiperSlide>
          ))}
       </Swiper>
