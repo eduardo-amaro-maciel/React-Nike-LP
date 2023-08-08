@@ -85,6 +85,13 @@ body {
    background-size: cover;
 }
 
+.faq-bg-animated {
+   background-image: url("../assets/images/bg-animated.svg");
+   background-repeat: no-repeat;
+   background-position: left top;
+   background-size: cover;
+}
+
 .hover-nav-top {
    @apply hover:text-[var(--color-primary)] cursor-pointer;
 }

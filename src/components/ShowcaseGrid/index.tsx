@@ -12,7 +12,6 @@ export default function ShowcaseGrid() {
             <VideoShowcase />
             <CardShowcase />
          </div>
-         <img src={wave} alt="" className="w-full mb-10 rotate-180" />
       </div>
    );
 }
