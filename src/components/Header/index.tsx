@@ -17,7 +17,7 @@ export default function Header() {
 
    return (
       <header className="top-0 z-20 duration-700" ref={headerRef}>
-         <nav className="flex justify-between items-center p-5 m-auto max-w-[1200px]">
+         <nav className="flex justify-between items-center p-5 m-auto max-w-[1400px]">
             <img src={logo} alt="logo" className="w-20 h-8" />
             <ul className="flex list-none gap-10 uppercase font-semibold duration-500">
                <li className="hover-nav-top">men</li>
