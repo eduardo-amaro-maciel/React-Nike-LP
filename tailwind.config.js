@@ -7,6 +7,9 @@ export default {
             sans: "Montserrat",
             mono: "Poppins",
          },
+         boxShadow: {
+            "video-section": "3px 3px var(--color-secondery)",
+         },
       },
    },
    plugins: [],

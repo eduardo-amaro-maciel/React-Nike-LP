@@ -7,6 +7,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import CarouselShoes from "./components/CarouselShoes";
 import ShowcaseTilt from "./components/ShowcaseTilt";
+import VideoShow from "./components/VideoShow";
 
 register();
 
@@ -17,6 +18,7 @@ export default function App() {
          <Hero />
          <CarouselShoes />
          <ShowcaseTilt />
+         <VideoShow />
       </>
    );
 }
