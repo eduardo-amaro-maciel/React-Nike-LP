@@ -17,3 +17,5 @@
    -  [ ] Instalar o Zustand.
    -  [ ] Criar a store usando o persister localhost do zustand.
    -  [ ] Numero de quantos itens estão no carrinho.
+   -  [ ] Criar um Drawer/menu lateral para exibir a imagem, quantidade de itens, e um botão de
+          fechar compra para cada item no carrinho.
